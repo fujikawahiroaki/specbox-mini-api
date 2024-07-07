@@ -1,0 +1,30 @@
+name: specbox-mini-api
+version: 0.1.0
+
+authors:
+  - fujikawahiroaki <fhir0aki3@gmail.com>
+
+targets:
+  specbox-mini-api:
+    main: src/specbox-mini-api.cr
+
+crystal: '>= 1.12.2'
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  pg:
+    github: will/crystal-pg
+  jwt:
+    github: crystal-community/jwt
+  jwks:
+    github: place-labs/jwks
+  postgis:
+    github: fujikawahiroaki/postgis
+  iso_codes:
+    github: mamantoha/iso_codes
+    version: ~> 0.4.7
+  crystal-env:
+    github: crystal-lang/crystal-env
