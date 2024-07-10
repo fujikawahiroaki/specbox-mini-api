@@ -26,5 +26,3 @@ dependencies:
   iso_codes:
     github: mamantoha/iso_codes
     version: ~> 0.4.7
-  crystal-env:
-    github: crystal-lang/crystal-env

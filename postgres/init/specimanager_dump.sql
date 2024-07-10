@@ -50,7 +50,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: all_taxa; Type: TABLE; Schema: public; Owner: lucky
+-- Name: all_taxa; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.all_taxa (
@@ -86,10 +86,10 @@ CREATE TABLE public.all_taxa (
 );
 
 
-ALTER TABLE public.all_taxa OWNER TO lucky;
+ALTER TABLE public.all_taxa OWNER TO mini-api;
 
 --
--- Name: auth_group; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_group; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_group (
@@ -98,10 +98,10 @@ CREATE TABLE public.auth_group (
 );
 
 
-ALTER TABLE public.auth_group OWNER TO lucky;
+ALTER TABLE public.auth_group OWNER TO mini-api;
 
 --
--- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_group_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_group_id_seq
@@ -113,17 +113,17 @@ CREATE SEQUENCE public.auth_group_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_group_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_group_id_seq OWNED BY public.auth_group.id;
 
 
 --
--- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_group_permissions; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_group_permissions (
@@ -133,10 +133,10 @@ CREATE TABLE public.auth_group_permissions (
 );
 
 
-ALTER TABLE public.auth_group_permissions OWNER TO lucky;
+ALTER TABLE public.auth_group_permissions OWNER TO mini-api;
 
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_group_permissions_id_seq
@@ -148,17 +148,17 @@ CREATE SEQUENCE public.auth_group_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_group_permissions_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_group_permissions_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_group_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_group_permissions_id_seq OWNED BY public.auth_group_permissions.id;
 
 
 --
--- Name: auth_permission; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_permission; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_permission (
@@ -169,10 +169,10 @@ CREATE TABLE public.auth_permission (
 );
 
 
-ALTER TABLE public.auth_permission OWNER TO lucky;
+ALTER TABLE public.auth_permission OWNER TO mini-api;
 
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_permission_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_permission_id_seq
@@ -184,17 +184,17 @@ CREATE SEQUENCE public.auth_permission_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_permission_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_permission_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_permission_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_permission_id_seq OWNED BY public.auth_permission.id;
 
 
 --
--- Name: auth_user; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_user; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_user (
@@ -212,10 +212,10 @@ CREATE TABLE public.auth_user (
 );
 
 
-ALTER TABLE public.auth_user OWNER TO lucky;
+ALTER TABLE public.auth_user OWNER TO mini-api;
 
 --
--- Name: auth_user_groups; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_user_groups; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_user_groups (
@@ -225,10 +225,10 @@ CREATE TABLE public.auth_user_groups (
 );
 
 
-ALTER TABLE public.auth_user_groups OWNER TO lucky;
+ALTER TABLE public.auth_user_groups OWNER TO mini-api;
 
 --
--- Name: auth_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_user_groups_id_seq
@@ -240,17 +240,17 @@ CREATE SEQUENCE public.auth_user_groups_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_groups_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_user_groups_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_user_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_user_groups_id_seq OWNED BY public.auth_user_groups.id;
 
 
 --
--- Name: auth_user_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_user_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_user_id_seq
@@ -262,17 +262,17 @@ CREATE SEQUENCE public.auth_user_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_user_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_user_id_seq OWNED BY public.auth_user.id;
 
 
 --
--- Name: auth_user_user_permissions; Type: TABLE; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.auth_user_user_permissions (
@@ -282,10 +282,10 @@ CREATE TABLE public.auth_user_user_permissions (
 );
 
 
-ALTER TABLE public.auth_user_user_permissions OWNER TO lucky;
+ALTER TABLE public.auth_user_user_permissions OWNER TO mini-api;
 
 --
--- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.auth_user_user_permissions_id_seq
@@ -297,17 +297,17 @@ CREATE SEQUENCE public.auth_user_user_permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.auth_user_user_permissions_id_seq OWNER TO lucky;
+ALTER TABLE public.auth_user_user_permissions_id_seq OWNER TO mini-api;
 
 --
--- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.auth_user_user_permissions_id_seq OWNED BY public.auth_user_user_permissions.id;
 
 
 --
--- Name: collect_points; Type: TABLE; Schema: public; Owner: lucky
+-- Name: collect_points; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.collect_points (
@@ -339,10 +339,10 @@ CREATE TABLE public.collect_points (
 );
 
 
-ALTER TABLE public.collect_points OWNER TO lucky;
+ALTER TABLE public.collect_points OWNER TO mini-api;
 
 --
--- Name: collect_points_tour; Type: TABLE; Schema: public; Owner: lucky
+-- Name: collect_points_tour; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.collect_points_tour (
@@ -352,10 +352,10 @@ CREATE TABLE public.collect_points_tour (
 );
 
 
-ALTER TABLE public.collect_points_tour OWNER TO lucky;
+ALTER TABLE public.collect_points_tour OWNER TO mini-api;
 
 --
--- Name: collect_points_tour_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: collect_points_tour_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.collect_points_tour_id_seq
@@ -367,17 +367,17 @@ CREATE SEQUENCE public.collect_points_tour_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.collect_points_tour_id_seq OWNER TO lucky;
+ALTER TABLE public.collect_points_tour_id_seq OWNER TO mini-api;
 
 --
--- Name: collect_points_tour_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: collect_points_tour_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.collect_points_tour_id_seq OWNED BY public.collect_points_tour.id;
 
 
 --
--- Name: collection_settings; Type: TABLE; Schema: public; Owner: lucky
+-- Name: collection_settings; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.collection_settings (
@@ -391,10 +391,10 @@ CREATE TABLE public.collection_settings (
 );
 
 
-ALTER TABLE public.collection_settings OWNER TO lucky;
+ALTER TABLE public.collection_settings OWNER TO mini-api;
 
 --
--- Name: custom_taxa; Type: TABLE; Schema: public; Owner: lucky
+-- Name: custom_taxa; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.custom_taxa (
@@ -404,10 +404,10 @@ CREATE TABLE public.custom_taxa (
 );
 
 
-ALTER TABLE public.custom_taxa OWNER TO lucky;
+ALTER TABLE public.custom_taxa OWNER TO mini-api;
 
 --
--- Name: default_taxa; Type: TABLE; Schema: public; Owner: lucky
+-- Name: default_taxa; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.default_taxa (
@@ -416,10 +416,10 @@ CREATE TABLE public.default_taxa (
 );
 
 
-ALTER TABLE public.default_taxa OWNER TO lucky;
+ALTER TABLE public.default_taxa OWNER TO mini-api;
 
 --
--- Name: django_admin_log; Type: TABLE; Schema: public; Owner: lucky
+-- Name: django_admin_log; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.django_admin_log (
@@ -435,10 +435,10 @@ CREATE TABLE public.django_admin_log (
 );
 
 
-ALTER TABLE public.django_admin_log OWNER TO lucky;
+ALTER TABLE public.django_admin_log OWNER TO mini-api;
 
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: django_admin_log_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.django_admin_log_id_seq
@@ -450,17 +450,17 @@ CREATE SEQUENCE public.django_admin_log_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_admin_log_id_seq OWNER TO lucky;
+ALTER TABLE public.django_admin_log_id_seq OWNER TO mini-api;
 
 --
--- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: django_admin_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.django_admin_log_id_seq OWNED BY public.django_admin_log.id;
 
 
 --
--- Name: django_content_type; Type: TABLE; Schema: public; Owner: lucky
+-- Name: django_content_type; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.django_content_type (
@@ -470,10 +470,10 @@ CREATE TABLE public.django_content_type (
 );
 
 
-ALTER TABLE public.django_content_type OWNER TO lucky;
+ALTER TABLE public.django_content_type OWNER TO mini-api;
 
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: django_content_type_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.django_content_type_id_seq
@@ -485,17 +485,17 @@ CREATE SEQUENCE public.django_content_type_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_content_type_id_seq OWNER TO lucky;
+ALTER TABLE public.django_content_type_id_seq OWNER TO mini-api;
 
 --
--- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: django_content_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.django_content_type_id_seq OWNED BY public.django_content_type.id;
 
 
 --
--- Name: django_migrations; Type: TABLE; Schema: public; Owner: lucky
+-- Name: django_migrations; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.django_migrations (
@@ -506,10 +506,10 @@ CREATE TABLE public.django_migrations (
 );
 
 
-ALTER TABLE public.django_migrations OWNER TO lucky;
+ALTER TABLE public.django_migrations OWNER TO mini-api;
 
 --
--- Name: django_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: django_migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.django_migrations_id_seq
@@ -521,17 +521,17 @@ CREATE SEQUENCE public.django_migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.django_migrations_id_seq OWNER TO lucky;
+ALTER TABLE public.django_migrations_id_seq OWNER TO mini-api;
 
 --
--- Name: django_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: django_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.django_migrations_id_seq OWNED BY public.django_migrations.id;
 
 
 --
--- Name: django_session; Type: TABLE; Schema: public; Owner: lucky
+-- Name: django_session; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.django_session (
@@ -541,10 +541,10 @@ CREATE TABLE public.django_session (
 );
 
 
-ALTER TABLE public.django_session OWNER TO lucky;
+ALTER TABLE public.django_session OWNER TO mini-api;
 
 --
--- Name: migrations; Type: TABLE; Schema: public; Owner: lucky
+-- Name: migrations; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.migrations (
@@ -553,10 +553,10 @@ CREATE TABLE public.migrations (
 );
 
 
-ALTER TABLE public.migrations OWNER TO lucky;
+ALTER TABLE public.migrations OWNER TO mini-api;
 
 --
--- Name: migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.migrations_id_seq
@@ -567,17 +567,17 @@ CREATE SEQUENCE public.migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.migrations_id_seq OWNER TO lucky;
+ALTER TABLE public.migrations_id_seq OWNER TO mini-api;
 
 --
--- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.migrations_id_seq OWNED BY public.migrations.id;
 
 
 --
--- Name: specimen_labels; Type: TABLE; Schema: public; Owner: lucky
+-- Name: specimen_labels; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.specimen_labels (
@@ -592,10 +592,10 @@ CREATE TABLE public.specimen_labels (
 );
 
 
-ALTER TABLE public.specimen_labels OWNER TO lucky;
+ALTER TABLE public.specimen_labels OWNER TO mini-api;
 
 --
--- Name: specimen_labels_label_specimens; Type: TABLE; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.specimen_labels_label_specimens (
@@ -605,10 +605,10 @@ CREATE TABLE public.specimen_labels_label_specimens (
 );
 
 
-ALTER TABLE public.specimen_labels_label_specimens OWNER TO lucky;
+ALTER TABLE public.specimen_labels_label_specimens OWNER TO mini-api;
 
 --
--- Name: specimen_labels_label_specimens_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.specimen_labels_label_specimens_id_seq
@@ -620,17 +620,17 @@ CREATE SEQUENCE public.specimen_labels_label_specimens_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.specimen_labels_label_specimens_id_seq OWNER TO lucky;
+ALTER TABLE public.specimen_labels_label_specimens_id_seq OWNER TO mini-api;
 
 --
--- Name: specimen_labels_label_specimens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.specimen_labels_label_specimens_id_seq OWNED BY public.specimen_labels_label_specimens.id;
 
 
 --
--- Name: specimens; Type: TABLE; Schema: public; Owner: lucky
+-- Name: specimens; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.specimens (
@@ -668,10 +668,10 @@ CREATE TABLE public.specimens (
 );
 
 
-ALTER TABLE public.specimens OWNER TO lucky;
+ALTER TABLE public.specimens OWNER TO mini-api;
 
 --
--- Name: tours; Type: TABLE; Schema: public; Owner: lucky
+-- Name: tours; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.tours (
@@ -691,10 +691,10 @@ CREATE TABLE public.tours (
 );
 
 
-ALTER TABLE public.tours OWNER TO lucky;
+ALTER TABLE public.tours OWNER TO mini-api;
 
 --
--- Name: user_profiles; Type: TABLE; Schema: public; Owner: lucky
+-- Name: user_profiles; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.user_profiles (
@@ -720,10 +720,10 @@ CREATE TABLE public.user_profiles (
 );
 
 
-ALTER TABLE public.user_profiles OWNER TO lucky;
+ALTER TABLE public.user_profiles OWNER TO mini-api;
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: lucky
+-- Name: users; Type: TABLE; Schema: public; Owner: mini-api
 --
 
 CREATE TABLE public.users (
@@ -735,10 +735,10 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO lucky;
+ALTER TABLE public.users OWNER TO mini-api;
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: lucky
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: mini-api
 --
 
 CREATE SEQUENCE public.users_id_seq
@@ -749,108 +749,108 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO lucky;
+ALTER TABLE public.users_id_seq OWNER TO mini-api;
 
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: lucky
+-- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mini-api
 --
 
 ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
 
 --
--- Name: auth_group id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_group id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group ALTER COLUMN id SET DEFAULT nextval('public.auth_group_id_seq'::regclass);
 
 
 --
--- Name: auth_group_permissions id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_group_permissions id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group_permissions ALTER COLUMN id SET DEFAULT nextval('public.auth_group_permissions_id_seq'::regclass);
 
 
 --
--- Name: auth_permission id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_permission id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_permission ALTER COLUMN id SET DEFAULT nextval('public.auth_permission_id_seq'::regclass);
 
 
 --
--- Name: auth_user id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_user id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user ALTER COLUMN id SET DEFAULT nextval('public.auth_user_id_seq'::regclass);
 
 
 --
--- Name: auth_user_groups id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_user_groups id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_groups ALTER COLUMN id SET DEFAULT nextval('public.auth_user_groups_id_seq'::regclass);
 
 
 --
--- Name: auth_user_user_permissions id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_user_permissions ALTER COLUMN id SET DEFAULT nextval('public.auth_user_user_permissions_id_seq'::regclass);
 
 
 --
--- Name: collect_points_tour id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: collect_points_tour id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points_tour ALTER COLUMN id SET DEFAULT nextval('public.collect_points_tour_id_seq'::regclass);
 
 
 --
--- Name: django_admin_log id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: django_admin_log id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_admin_log ALTER COLUMN id SET DEFAULT nextval('public.django_admin_log_id_seq'::regclass);
 
 
 --
--- Name: django_content_type id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: django_content_type id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_content_type ALTER COLUMN id SET DEFAULT nextval('public.django_content_type_id_seq'::regclass);
 
 
 --
--- Name: django_migrations id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: django_migrations id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_migrations ALTER COLUMN id SET DEFAULT nextval('public.django_migrations_id_seq'::regclass);
 
 
 --
--- Name: migrations id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: migrations id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.migrations ALTER COLUMN id SET DEFAULT nextval('public.migrations_id_seq'::regclass);
 
 
 --
--- Name: specimen_labels_label_specimens id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels_label_specimens ALTER COLUMN id SET DEFAULT nextval('public.specimen_labels_label_specimens_id_seq'::regclass);
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: lucky
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
 
 
 --
--- Name: all_taxa all_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: all_taxa all_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.all_taxa
@@ -858,7 +858,7 @@ ALTER TABLE ONLY public.all_taxa
 
 
 --
--- Name: auth_group auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group auth_group_name_key; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group
@@ -866,7 +866,7 @@ ALTER TABLE ONLY public.auth_group
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -874,7 +874,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group_permissions auth_group_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -882,7 +882,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group auth_group_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group
@@ -890,7 +890,7 @@ ALTER TABLE ONLY public.auth_group
 
 
 --
--- Name: auth_permission auth_permission_content_type_id_codename_01ab375a_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_permission auth_permission_content_type_id_codename_01ab375a_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -898,7 +898,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: auth_permission auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_permission auth_permission_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -906,7 +906,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: auth_user_groups auth_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_groups auth_user_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_groups
@@ -914,7 +914,7 @@ ALTER TABLE ONLY public.auth_user_groups
 
 
 --
--- Name: auth_user_groups auth_user_groups_user_id_group_id_94350c0c_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_groups auth_user_groups_user_id_group_id_94350c0c_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_groups
@@ -922,7 +922,7 @@ ALTER TABLE ONLY public.auth_user_groups
 
 
 --
--- Name: auth_user auth_user_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user auth_user_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user
@@ -930,7 +930,7 @@ ALTER TABLE ONLY public.auth_user
 
 
 --
--- Name: auth_user_user_permissions auth_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions auth_user_user_permissions_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_user_permissions
@@ -938,7 +938,7 @@ ALTER TABLE ONLY public.auth_user_user_permissions
 
 
 --
--- Name: auth_user_user_permissions auth_user_user_permissions_user_id_permission_id_14a6b632_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions auth_user_user_permissions_user_id_permission_id_14a6b632_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_user_permissions
@@ -946,7 +946,7 @@ ALTER TABLE ONLY public.auth_user_user_permissions
 
 
 --
--- Name: auth_user auth_user_username_key; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user auth_user_username_key; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user
@@ -954,7 +954,7 @@ ALTER TABLE ONLY public.auth_user
 
 
 --
--- Name: collect_points collect_points_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points collect_points_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points
@@ -962,7 +962,7 @@ ALTER TABLE ONLY public.collect_points
 
 
 --
--- Name: collect_points_tour collect_points_tour_collectpoint_id_tour_id_7c17bf1d_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points_tour collect_points_tour_collectpoint_id_tour_id_7c17bf1d_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points_tour
@@ -970,7 +970,7 @@ ALTER TABLE ONLY public.collect_points_tour
 
 
 --
--- Name: collect_points_tour collect_points_tour_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points_tour collect_points_tour_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points_tour
@@ -978,7 +978,7 @@ ALTER TABLE ONLY public.collect_points_tour
 
 
 --
--- Name: collection_settings collection_settings_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collection_settings collection_settings_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collection_settings
@@ -986,7 +986,7 @@ ALTER TABLE ONLY public.collection_settings
 
 
 --
--- Name: custom_taxa custom_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: custom_taxa custom_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.custom_taxa
@@ -994,7 +994,7 @@ ALTER TABLE ONLY public.custom_taxa
 
 
 --
--- Name: default_taxa default_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: default_taxa default_taxa_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.default_taxa
@@ -1002,7 +1002,7 @@ ALTER TABLE ONLY public.default_taxa
 
 
 --
--- Name: django_admin_log django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_admin_log django_admin_log_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -1010,7 +1010,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: django_content_type django_content_type_app_label_model_76bd3d3b_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_content_type django_content_type_app_label_model_76bd3d3b_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_content_type
@@ -1018,7 +1018,7 @@ ALTER TABLE ONLY public.django_content_type
 
 
 --
--- Name: django_content_type django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_content_type django_content_type_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_content_type
@@ -1026,7 +1026,7 @@ ALTER TABLE ONLY public.django_content_type
 
 
 --
--- Name: django_migrations django_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_migrations django_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_migrations
@@ -1034,7 +1034,7 @@ ALTER TABLE ONLY public.django_migrations
 
 
 --
--- Name: django_session django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_session django_session_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_session
@@ -1042,7 +1042,7 @@ ALTER TABLE ONLY public.django_session
 
 
 --
--- Name: migrations migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: migrations migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.migrations
@@ -1050,7 +1050,7 @@ ALTER TABLE ONLY public.migrations
 
 
 --
--- Name: specimen_labels_label_specimens specimen_labels_label_sp_specimenlabel_id_specime_ec0a5d9f_uniq; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens specimen_labels_label_sp_specimenlabel_id_specime_ec0a5d9f_uniq; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels_label_specimens
@@ -1058,7 +1058,7 @@ ALTER TABLE ONLY public.specimen_labels_label_specimens
 
 
 --
--- Name: specimen_labels_label_specimens specimen_labels_label_specimens_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens specimen_labels_label_specimens_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels_label_specimens
@@ -1066,7 +1066,7 @@ ALTER TABLE ONLY public.specimen_labels_label_specimens
 
 
 --
--- Name: specimen_labels specimen_labels_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels specimen_labels_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels
@@ -1074,7 +1074,7 @@ ALTER TABLE ONLY public.specimen_labels
 
 
 --
--- Name: specimens specimens_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1082,7 +1082,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: tours tours_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: tours tours_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.tours
@@ -1090,7 +1090,7 @@ ALTER TABLE ONLY public.tours
 
 
 --
--- Name: user_profiles user_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: user_profiles user_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.user_profiles
@@ -1098,7 +1098,7 @@ ALTER TABLE ONLY public.user_profiles
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: lucky
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.users
@@ -1106,238 +1106,238 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: auth_group_name_a6ea08ec_like; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_group_name_a6ea08ec_like; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_group_name_a6ea08ec_like ON public.auth_group USING btree (name varchar_pattern_ops);
 
 
 --
--- Name: auth_group_permissions_group_id_b120cbf9; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_group_permissions_group_id_b120cbf9; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_group_permissions_group_id_b120cbf9 ON public.auth_group_permissions USING btree (group_id);
 
 
 --
--- Name: auth_group_permissions_permission_id_84c5c92e; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_group_permissions_permission_id_84c5c92e; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_group_permissions_permission_id_84c5c92e ON public.auth_group_permissions USING btree (permission_id);
 
 
 --
--- Name: auth_permission_content_type_id_2f476e4b; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_permission_content_type_id_2f476e4b; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_permission_content_type_id_2f476e4b ON public.auth_permission USING btree (content_type_id);
 
 
 --
--- Name: auth_user_groups_group_id_97559544; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_user_groups_group_id_97559544; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_user_groups_group_id_97559544 ON public.auth_user_groups USING btree (group_id);
 
 
 --
--- Name: auth_user_groups_user_id_6a12ed8b; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_user_groups_user_id_6a12ed8b; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_user_groups_user_id_6a12ed8b ON public.auth_user_groups USING btree (user_id);
 
 
 --
--- Name: auth_user_user_permissions_permission_id_1fbb5f2c; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions_permission_id_1fbb5f2c; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_user_user_permissions_permission_id_1fbb5f2c ON public.auth_user_user_permissions USING btree (permission_id);
 
 
 --
--- Name: auth_user_user_permissions_user_id_a95ead1b; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions_user_id_a95ead1b; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_user_user_permissions_user_id_a95ead1b ON public.auth_user_user_permissions USING btree (user_id);
 
 
 --
--- Name: auth_user_username_6821ab7c_like; Type: INDEX; Schema: public; Owner: lucky
+-- Name: auth_user_username_6821ab7c_like; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX auth_user_username_6821ab7c_like ON public.auth_user USING btree (username varchar_pattern_ops);
 
 
 --
--- Name: collect_points_location_id; Type: INDEX; Schema: public; Owner: lucky
+-- Name: collect_points_location_id; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX collect_points_location_id ON public.collect_points USING gist (location);
 
 
 --
--- Name: collect_points_tour_collectpoint_id_f5ae5bdf; Type: INDEX; Schema: public; Owner: lucky
+-- Name: collect_points_tour_collectpoint_id_f5ae5bdf; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX collect_points_tour_collectpoint_id_f5ae5bdf ON public.collect_points_tour USING btree (collectpoint_id);
 
 
 --
--- Name: collect_points_tour_tour_id_918738ef; Type: INDEX; Schema: public; Owner: lucky
+-- Name: collect_points_tour_tour_id_918738ef; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX collect_points_tour_tour_id_918738ef ON public.collect_points_tour USING btree (tour_id);
 
 
 --
--- Name: collect_points_user_id_703b22e9; Type: INDEX; Schema: public; Owner: lucky
+-- Name: collect_points_user_id_703b22e9; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX collect_points_user_id_703b22e9 ON public.collect_points USING btree (user_id);
 
 
 --
--- Name: collection_settings_user_id_a53a3b72; Type: INDEX; Schema: public; Owner: lucky
+-- Name: collection_settings_user_id_a53a3b72; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX collection_settings_user_id_a53a3b72 ON public.collection_settings USING btree (user_id);
 
 
 --
--- Name: custom_taxa_user_id_a173fd51; Type: INDEX; Schema: public; Owner: lucky
+-- Name: custom_taxa_user_id_a173fd51; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX custom_taxa_user_id_a173fd51 ON public.custom_taxa USING btree (user_id);
 
 
 --
--- Name: django_admin_log_content_type_id_c4bce8eb; Type: INDEX; Schema: public; Owner: lucky
+-- Name: django_admin_log_content_type_id_c4bce8eb; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX django_admin_log_content_type_id_c4bce8eb ON public.django_admin_log USING btree (content_type_id);
 
 
 --
--- Name: django_admin_log_user_id_c564eba6; Type: INDEX; Schema: public; Owner: lucky
+-- Name: django_admin_log_user_id_c564eba6; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX django_admin_log_user_id_c564eba6 ON public.django_admin_log USING btree (user_id);
 
 
 --
--- Name: django_session_expire_date_a5c62663; Type: INDEX; Schema: public; Owner: lucky
+-- Name: django_session_expire_date_a5c62663; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX django_session_expire_date_a5c62663 ON public.django_session USING btree (expire_date);
 
 
 --
--- Name: django_session_session_key_c0390e0f_like; Type: INDEX; Schema: public; Owner: lucky
+-- Name: django_session_session_key_c0390e0f_like; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX django_session_session_key_c0390e0f_like ON public.django_session USING btree (session_key varchar_pattern_ops);
 
 
 --
--- Name: migrations_version_index; Type: INDEX; Schema: public; Owner: lucky
+-- Name: migrations_version_index; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE UNIQUE INDEX migrations_version_index ON public.migrations USING btree (version);
 
 
 --
--- Name: specimen_labels_label_specimens_specimen_id_856421f1; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens_specimen_id_856421f1; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimen_labels_label_specimens_specimen_id_856421f1 ON public.specimen_labels_label_specimens USING btree (specimen_id);
 
 
 --
--- Name: specimen_labels_label_specimens_specimenlabel_id_ca839f7e; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens_specimenlabel_id_ca839f7e; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimen_labels_label_specimens_specimenlabel_id_ca839f7e ON public.specimen_labels_label_specimens USING btree (specimenlabel_id);
 
 
 --
--- Name: specimen_labels_user_id_c3656e70; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimen_labels_user_id_c3656e70; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimen_labels_user_id_c3656e70 ON public.specimen_labels USING btree (user_id);
 
 
 --
--- Name: specimens_collect_point_info_id_6be0fbc5; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_collect_point_info_id_6be0fbc5; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_collect_point_info_id_6be0fbc5 ON public.specimens USING btree (collect_point_info_id);
 
 
 --
--- Name: specimens_collection_settings_info_id_fb09849f; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_collection_settings_info_id_fb09849f; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_collection_settings_info_id_fb09849f ON public.specimens USING btree (collection_settings_info_id);
 
 
 --
--- Name: specimens_custom_taxon_info_id_bbee011b; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_custom_taxon_info_id_bbee011b; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_custom_taxon_info_id_bbee011b ON public.specimens USING btree (custom_taxon_info_id);
 
 
 --
--- Name: specimens_default_taxon_info_id_a610fe3b; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_default_taxon_info_id_a610fe3b; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_default_taxon_info_id_a610fe3b ON public.specimens USING btree (default_taxon_info_id);
 
 
 --
--- Name: specimens_tour_id_41cb13e4; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_tour_id_41cb13e4; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_tour_id_41cb13e4 ON public.specimens USING btree (tour_id);
 
 
 --
--- Name: specimens_user_id_c7d6bf28; Type: INDEX; Schema: public; Owner: lucky
+-- Name: specimens_user_id_c7d6bf28; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX specimens_user_id_c7d6bf28 ON public.specimens USING btree (user_id);
 
 
 --
--- Name: tours_track_id; Type: INDEX; Schema: public; Owner: lucky
+-- Name: tours_track_id; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX tours_track_id ON public.tours USING gist (track);
 
 
 --
--- Name: tours_user_id_f66f4e85; Type: INDEX; Schema: public; Owner: lucky
+-- Name: tours_user_id_f66f4e85; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX tours_user_id_f66f4e85 ON public.tours USING btree (user_id);
 
 
 --
--- Name: user_profiles_user_id_8c5ab5fe; Type: INDEX; Schema: public; Owner: lucky
+-- Name: user_profiles_user_id_8c5ab5fe; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE INDEX user_profiles_user_id_8c5ab5fe ON public.user_profiles USING btree (user_id);
 
 
 --
--- Name: users_email_index; Type: INDEX; Schema: public; Owner: lucky
+-- Name: users_email_index; Type: INDEX; Schema: public; Owner: mini-api
 --
 
 CREATE UNIQUE INDEX users_email_index ON public.users USING btree (email);
 
 
 --
--- Name: auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -1345,7 +1345,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_group_permissions
@@ -1353,7 +1353,7 @@ ALTER TABLE ONLY public.auth_group_permissions
 
 
 --
--- Name: auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_permission
@@ -1361,7 +1361,7 @@ ALTER TABLE ONLY public.auth_permission
 
 
 --
--- Name: auth_user_groups auth_user_groups_group_id_97559544_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_groups auth_user_groups_group_id_97559544_fk_auth_group_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_groups
@@ -1369,7 +1369,7 @@ ALTER TABLE ONLY public.auth_user_groups
 
 
 --
--- Name: auth_user_groups auth_user_groups_user_id_6a12ed8b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_groups auth_user_groups_user_id_6a12ed8b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_groups
@@ -1377,7 +1377,7 @@ ALTER TABLE ONLY public.auth_user_groups
 
 
 --
--- Name: auth_user_user_permissions auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_user_permissions
@@ -1385,7 +1385,7 @@ ALTER TABLE ONLY public.auth_user_user_permissions
 
 
 --
--- Name: auth_user_user_permissions auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: auth_user_user_permissions auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.auth_user_user_permissions
@@ -1393,7 +1393,7 @@ ALTER TABLE ONLY public.auth_user_user_permissions
 
 
 --
--- Name: collect_points_tour collect_points_tour_collectpoint_id_f5ae5bdf_fk_collect_p; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points_tour collect_points_tour_collectpoint_id_f5ae5bdf_fk_collect_p; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points_tour
@@ -1401,7 +1401,7 @@ ALTER TABLE ONLY public.collect_points_tour
 
 
 --
--- Name: collect_points_tour collect_points_tour_tour_id_918738ef_fk_tours_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points_tour collect_points_tour_tour_id_918738ef_fk_tours_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points_tour
@@ -1409,7 +1409,7 @@ ALTER TABLE ONLY public.collect_points_tour
 
 
 --
--- Name: collect_points collect_points_user_id_703b22e9_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collect_points collect_points_user_id_703b22e9_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collect_points
@@ -1417,7 +1417,7 @@ ALTER TABLE ONLY public.collect_points
 
 
 --
--- Name: collection_settings collection_settings_user_id_a53a3b72_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: collection_settings collection_settings_user_id_a53a3b72_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.collection_settings
@@ -1425,7 +1425,7 @@ ALTER TABLE ONLY public.collection_settings
 
 
 --
--- Name: custom_taxa custom_taxa_taxon_ptr_id_68d49116_fk_all_taxa_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: custom_taxa custom_taxa_taxon_ptr_id_68d49116_fk_all_taxa_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.custom_taxa
@@ -1433,7 +1433,7 @@ ALTER TABLE ONLY public.custom_taxa
 
 
 --
--- Name: custom_taxa custom_taxa_user_id_a173fd51_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: custom_taxa custom_taxa_user_id_a173fd51_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.custom_taxa
@@ -1441,7 +1441,7 @@ ALTER TABLE ONLY public.custom_taxa
 
 
 --
--- Name: default_taxa default_taxa_taxon_ptr_id_18b91e6f_fk_all_taxa_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: default_taxa default_taxa_taxon_ptr_id_18b91e6f_fk_all_taxa_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.default_taxa
@@ -1449,7 +1449,7 @@ ALTER TABLE ONLY public.default_taxa
 
 
 --
--- Name: django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -1457,7 +1457,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: django_admin_log django_admin_log_user_id_c564eba6_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: django_admin_log django_admin_log_user_id_c564eba6_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.django_admin_log
@@ -1465,7 +1465,7 @@ ALTER TABLE ONLY public.django_admin_log
 
 
 --
--- Name: specimen_labels_label_specimens specimen_labels_labe_specimen_id_856421f1_fk_specimens; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens specimen_labels_labe_specimen_id_856421f1_fk_specimens; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels_label_specimens
@@ -1473,7 +1473,7 @@ ALTER TABLE ONLY public.specimen_labels_label_specimens
 
 
 --
--- Name: specimen_labels_label_specimens specimen_labels_labe_specimenlabel_id_ca839f7e_fk_specimen_; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels_label_specimens specimen_labels_labe_specimenlabel_id_ca839f7e_fk_specimen_; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels_label_specimens
@@ -1481,7 +1481,7 @@ ALTER TABLE ONLY public.specimen_labels_label_specimens
 
 
 --
--- Name: specimen_labels specimen_labels_user_id_c3656e70_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimen_labels specimen_labels_user_id_c3656e70_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimen_labels
@@ -1489,7 +1489,7 @@ ALTER TABLE ONLY public.specimen_labels
 
 
 --
--- Name: specimens specimens_collect_point_info_id_6be0fbc5_fk_collect_points_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_collect_point_info_id_6be0fbc5_fk_collect_points_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1497,7 +1497,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: specimens specimens_collection_settings__fb09849f_fk_collectio; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_collection_settings__fb09849f_fk_collectio; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1505,7 +1505,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: specimens specimens_custom_taxon_info_id_bbee011b_fk_custom_ta; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_custom_taxon_info_id_bbee011b_fk_custom_ta; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1513,7 +1513,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: specimens specimens_default_taxon_info_i_a610fe3b_fk_default_t; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_default_taxon_info_i_a610fe3b_fk_default_t; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1521,7 +1521,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: specimens specimens_tour_id_41cb13e4_fk_tours_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_tour_id_41cb13e4_fk_tours_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1529,7 +1529,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: specimens specimens_user_id_c7d6bf28_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: specimens specimens_user_id_c7d6bf28_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.specimens
@@ -1537,7 +1537,7 @@ ALTER TABLE ONLY public.specimens
 
 
 --
--- Name: tours tours_user_id_f66f4e85_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: tours tours_user_id_f66f4e85_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.tours
@@ -1545,7 +1545,7 @@ ALTER TABLE ONLY public.tours
 
 
 --
--- Name: user_profiles user_profiles_user_id_8c5ab5fe_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: lucky
+-- Name: user_profiles user_profiles_user_id_8c5ab5fe_fk_auth_user_id; Type: FK CONSTRAINT; Schema: public; Owner: mini-api
 --
 
 ALTER TABLE ONLY public.user_profiles
@@ -1558,7 +1558,7 @@ ALTER TABLE ONLY public.user_profiles
 
 REVOKE USAGE ON SCHEMA public FROM PUBLIC;
 GRANT ALL ON SCHEMA public TO PUBLIC;
-GRANT ALL ON SCHEMA public TO lucky;
+GRANT ALL ON SCHEMA public TO mini-api;
 
 
 --
